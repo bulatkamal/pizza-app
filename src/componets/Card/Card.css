@@ -1,0 +1,77 @@
+.Card {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #D58C51;
+    box-sizing: border-box;
+    /* padding: 43px 21px; */
+    max-width: 312px;
+    
+}
+
+.Card-body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.Card-img {
+list-style: none;
+display: flex;
+justify-content: center;
+}
+
+.Card-img__inner {
+    width: 270px;
+    height: 271px;
+    border: 1px solid black;
+    margin: 43px 21px 0;
+}
+
+.Card-title {
+    list-style: none;
+    font-size: 17px;
+    line-height: 21px;
+    margin-top: 31px;
+    margin-left: 21px;
+    text-align: left;
+}
+
+.Card-description {
+    list-style: none;
+    margin-top: 13px;
+    margin-left: 21px;
+    text-align: left;
+}
+
+.Card-price {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 52px;
+    margin-left: 21px;
+}
+
+.buy-button {
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 26px;
+    margin-bottom: 20px;
+}
+
+.Card-price__rublesGramms {
+    display: flex;
+}
+
+.Card-price__rubles {
+    font-size: 17px;
+    margin-top: 9px;
+}
+
+.Card-price__gramms {
+    font-size: 14px;
+    margin-top: 12px;
+}
