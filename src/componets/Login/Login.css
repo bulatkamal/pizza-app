@@ -1,11 +1,73 @@
 .Login {
-    border: 1px solid black;
-    display: inline-flex;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.login-form {
+.Login-form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
+.Login-wrapper {
+    border: 1px solid black;
+    display: flex;
+    background: #FFFFFF;
+    width: 460px;
+    height: 340px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.Login-title {
+    font-weight: bold;
+    font-size: 31px;
+    line-height: 38px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+
+.Login-field {
+    width: 100%;
+    height: 39px;
+    border: 1px solid #D58C51;
+    box-sizing: border-box;
+    border-radius: 61px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #161516;
+    padding: 9px 0 10px 18px;
+}
+
+.Login-field::placeholder {
+    color: #161516;
+}
+
+.Login-checkbox {
+    margin-bottom: 28px;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+              line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.Login-button {
+    width: 200px;
+    height: 42px;
+    left: 620px;
+    top: 622px;
+    background: #D58C51;
+}
+
+.Login-action{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

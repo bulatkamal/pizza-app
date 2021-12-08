@@ -1,0 +1,58 @@
+.cart {
+    
+}
+
+.cart-header{
+
+}
+
+.cart-title{
+    font-weight: bold;
+    font-size: 31px;
+    line-height: 38px;    
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.cart-order{
+    margin: 0;
+    padding: 0;
+}
+
+.footer{
+    
+    border-top: 1px solid #D58C51;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 0 27px;
+}
+.footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.footer-description{
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    
+}
+
+.footer-total{
+    font-size: 18px;
+    line-height: 22px;
+    color: #D58C51;
+}
+
+.footer-button{
+    font-size: 14px;
+    line-height: 17px;
+    color: #131313;
+    
+}
