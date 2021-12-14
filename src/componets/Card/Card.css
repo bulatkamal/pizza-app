@@ -9,6 +9,7 @@
     margin-bottom: 35px;
     margin-right: 20px;
     color: #FFFFFF;
+    height: 552px;
     
 }
 
@@ -16,6 +17,10 @@
     margin: 0;
     padding: 0;
     
+}
+
+.Card-body:hover {
+    color: #D58C51;
 }
 
 .Card-img {
@@ -41,6 +46,7 @@
     text-align: left;
 }
 
+
 .Card-description {
     list-style: none;
     margin-top: 13px;
@@ -49,7 +55,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #FFFFFF;
 }
 
 .Card-price {
@@ -64,9 +69,15 @@
     font-size: 0;
     width: 30px;
     height: 30px;
+    border: 1px solid white;
     border-radius: 100%;
-    margin-right: 26px;
-    margin-bottom: 20px;
+    background: none;
+    margin-right: 30px;
+    margin-bottom: 25px;
+}
+
+.buy-button:hover {
+    border: 1px solid #D58C51;
 }
 
 .Card-price__rublesGramms {
@@ -75,10 +86,10 @@
 
 .Card-price__rubles {
     font-size: 17px;
-    margin-top: 9px;
+    margin-top: 5px;
 }
 
 .Card-price__gramms {
     font-size: 14px;
-    margin-top: 12px;
+    margin-top: 7px;
 }

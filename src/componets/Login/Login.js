@@ -12,7 +12,7 @@ function Login() {
                     <input type="text" placeholder="E-mail" className="Login-field" />
                     <input type="password" placeholder="Пароль" className="Login-field" />
                     <label className="Login-checkbox" >
-                        <input type="checkbox" />
+                        <input type="checkbox" className="Checkbox" />
                         Я согласен получать обновления на почту </label>
                     <div className="Login-action" >
                         <Link to="page2" className="Login-button" > Войти </Link>

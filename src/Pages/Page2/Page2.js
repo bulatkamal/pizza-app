@@ -1,9 +1,18 @@
 import './Page2.css';
 import Card from '../../componets/Card/Card'
 import { useEffect, useState } from 'react';
+import {
+  increment,
+  selectCount,
+} from '../../componets/Card/cardSlice';
+import { useSelector, useDispatch } from 'react-redux';
+import {
+  Link
+} from "react-router-dom";
 
 function Page2() {
 
+  const count = useSelector(selectCount);
   //useState нужен для обновления DOM
   const [pizzas, setPizzas] = useState([]);
 
@@ -24,10 +33,10 @@ function Page2() {
         <h1 className="Products-title">Наша продукция</h1>
         <div className="Products-block">
           <div className="Products-cart">
-            <div>3 товара</div>
+            <div className="Products-amount">{count.length} товара</div>
             <div>на сумму 3 500 ₽</div>
           </div>
-          <button className="Products-button"></button>
+          <Link to="/page3" className="Products-button" >  </Link>
         </div>
       </div>
       <div className="Products-wrapper">

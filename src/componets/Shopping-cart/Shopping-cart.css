@@ -30,7 +30,9 @@
 .shoppingCart-remove {
     width: 30px;
     height: 30px;
+    border: 1px solid #D58C51;;
     border-radius: 100%;
+    background: black;
 }
 
 .shoppingCart-price {

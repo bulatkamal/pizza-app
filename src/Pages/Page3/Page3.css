@@ -36,6 +36,10 @@
     margin: 0 auto;
 }
 
+.footer-amount {
+    margin-top: 9px;
+}
+
 .footer-description{
     font-size: 21px;
     line-height: 26px;
@@ -48,11 +52,20 @@
     font-size: 18px;
     line-height: 22px;
     color: #D58C51;
+    margin-left: 13px;
 }
 
 .footer-button{
     font-size: 14px;
     line-height: 17px;
+    background: #D58C51;
     color: #131313;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 34px;
+    height: 42px;
+    width: 200px;
+    border: none;
+    font-family: Montserrat;
 }
