@@ -10,6 +10,17 @@ import './Shopping-cart.css';
 
 function ShoppingCart(props) {
     const dispatch = useDispatch();
+    const pizzas = useSelector(selectCount);// [{id: 0}, {id: 0}, {id:1}]
+    
+    let sumPrice = 0;
+
+    const groupPizza = pizzas.filter(pizza => pizza.id === props.id);// [{id: 0, price: 123}, {id: 0, price: 123}] фильтруем по айди
+
+    groupPizza.forEach((pizza)=> {
+        // суммируем 
+        sumPrice = sumPrice + pizza.price;
+    })
+
     
     return (
         <li className="shopppingCart">
@@ -18,7 +29,7 @@ function ShoppingCart(props) {
                 <div className="shoppingCart-item">{props.name}</div>
             </div>
             <div className="shoppingCart-action">
-                <div  className="shoppingCart-price">{props.price}</div>
+                <div  className="shoppingCart-price">{sumPrice}</div>
                 <div ><button onClick={() => dispatch(decrement(props))} className="shoppingCart-remove"></button></div>
             </div>
         </li>

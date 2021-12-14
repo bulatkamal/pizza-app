@@ -26,6 +26,14 @@ function Page2() {
     }
   });
 
+  const orderPizzas = useSelector(selectCount);
+
+  let orderSum = 0;
+
+  orderPizzas.forEach((pizza)=>{
+    orderSum = orderSum + pizza.price;
+  });
+
   console.log(pizzas)
   return (
     <div className="Products">
@@ -34,7 +42,7 @@ function Page2() {
         <div className="Products-block">
           <div className="Products-cart">
             <div className="Products-amount">{count.length} товара</div>
-            <div>на сумму 3 500 ₽</div>
+            <div>на сумму {orderSum} ₽</div>
           </div>
           <Link to="/page3" className="Products-button" >  </Link>
         </div>

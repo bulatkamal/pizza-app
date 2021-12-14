@@ -13,8 +13,10 @@ export const counterSlice = createSlice({
       state.value.push(action.payload);
     },
     decrement: (state, action) => {
-      state.value.push(action.payload);
-      console.log("decrement")
+      const pizza = action.payload;
+      
+      state.value = state.value.filter((item)=> item.id !== pizza.id);//
+
     }
   },
 });

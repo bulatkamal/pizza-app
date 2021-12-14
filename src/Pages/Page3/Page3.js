@@ -11,6 +11,7 @@ function Page3() {
   const unique = [...new Set(pizzas.map(item => item.id))]; // [ '0', '1']
 
   const orderPizzas = [];
+  let orderSum = 0;
 
   unique.forEach((id)=> {
     const pizza = pizzas.find(x => x.id === id);
@@ -18,6 +19,9 @@ function Page3() {
   })
 
   //// [{id: 0}, {id:1}]
+  pizzas.forEach((pizza)=>{
+    orderSum = orderSum + pizza.price;
+  });
   
   return (
     <div>
@@ -35,7 +39,7 @@ function Page3() {
           <div className="footer__wrapper">
             <div className="footer-amount">
               <span className="footer-description">Заказ на сумму:</span>
-              <span className="footer-total">6 220 ₽</span>
+              <span className="footer-total">{orderSum} ₽</span>
             </div>
             <div><button className="footer-button">Оформить заказ</button></div>
           </div>
